@@ -13,5 +13,5 @@ sudo podman run -d --privileged -name=crc-test \
                 -v $PWD:/crc \
                 -v /var/lib/libvirt/:/var/lib/libvirt/ \
                 -v /sys/fs/cgroup:/sys/fs/cgroup:rw \
-                localhost/crc-it-fedora:32-1.13.4 
+                localhost/ubuntu-crc-it:20.04-1.13.4 
 
