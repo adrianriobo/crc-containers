@@ -9,6 +9,6 @@ RUN git clone -b $BRANCH --single-branch $SOURCE_REPO \
     && make -C origin WHAT=cmd/openshift-tests
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal
-COPY --from=build /go/src/origin/openshift-tests .
+COPY --from=build /opt/app-root/src/origin/openshift-tests .
 ENTRYPOINT ["/openshift-tests"]
 
